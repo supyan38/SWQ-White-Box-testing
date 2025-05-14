@@ -10,7 +10,7 @@ Selamat datang di repositori tugas kelompok kami! Proyek ini merupakan bagian da
 |----|----------------------|---------------|------------------------------------------|
 | 1  | M. Sunandi           | 20221310071   | ✅ Data Flow Testing                      |
 | 2  | Muhammad Supyan      | 20221310078   | ✅ Desk Checking                        |
-| 3  | Santi Febrianti      | 20221310084   | ✅ ---------------------------------    |
+| 3  | Santi Febrianti      | 20221310084   | ✅ Code Walkthrough   |
 | 4  | Udan                 | 20221310088   | ✅ ------------------------------       |
 
 ---
@@ -32,7 +32,7 @@ White Box Testing dilakukan melalui empat tahapan utama:
 | Tahapan               | Sub-Tahapan             | Status | Penanggung Jawab     |
 |-----------------------|-------------------------|--------|-----------------------|
 | Desk Checking         | -                       | ✅     | Muhammad Supyan       |
-| Code Walkthrough      | Formal Inspection       | ✅     | [Nama Anggota 2]      |
+| Code Walkthrough      | Formal Inspection       | ✅     | Santi Febrianti      |
 | Control Flow Testing  | Basic Path Testing      | ✅     | [Nama Anggota 3]      |
 | Data Flow Testing     | Loop Testing            | ✅     | M. Sunandi      |
 
