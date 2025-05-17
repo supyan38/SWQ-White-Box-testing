@@ -1,8 +1,0 @@
-bookshelf-app/
-├── server.js
-├── package.json
-├── src/
-│   ├── books/
-│   │   ├── handler.js
-│   │   └── routes.js
-│   └── books.js
