@@ -4,7 +4,7 @@
 ## 👥 Tim Review:
 - Moderator: Supyan
 - Developer: Supyan
-- Reviewer: Santi, Didi
+- Reviewer: Santi
 
 ---
 
