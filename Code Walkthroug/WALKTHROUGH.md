@@ -98,5 +98,4 @@ Bookshelf App adalah aplikasi manajemen daftar buku yang disimpan di `localStora
 ---
 
 ## ✍️ Disusun Oleh:
-Supyan, Santi, Didi  
-Program Studi Teknik Informatika – Semester 6
+Santi Febrianti_20221310084
