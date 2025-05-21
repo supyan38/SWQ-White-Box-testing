@@ -1,53 +1,80 @@
-# 🧪 FORMAL INSPECTION REPORT - `main.js`
+# 🧪 FORMAL INSPECTION REPORT - Bookshelf App
 
-## 📅 Tanggal: 21 Mei 2025  
-## 👥 Tim Review:
-- Moderator: Supyan
-- Developer: Supyan
-- Reviewer: Santi
-
----
-
-## 1. 📝 PLANNING
-File yang diperiksa:
-- `/main.js`
+## 👥 Tim Pemeriksa
+| Peran        | Nama        |
+|--------------|-------------|
+| Reviewer     | Santi       |
 
 ---
 
-## 2. 🔍 OVERVIEW
-Aplikasi ini adalah sistem pencatatan buku sederhana berbasis JavaScript. Fitur utama:
+## 1. 📋 PLANNING
+
+### File yang diperiksa:
+- `main.js`
+- `index.html`
+- `style.css`
+
+### Tujuan:
+Menemukan dan mendokumentasikan kesalahan logika, potensi bug, serta bagian yang perlu ditingkatkan berdasarkan struktur kode sebelum pengujian lebih lanjut dilakukan.
+
+---
+
+## 2. 🧠 OVERVIEW SISTEM
+
+Aplikasi **Bookshelf App** adalah sistem manajemen buku berbasis web yang memungkinkan pengguna:
 - Menambahkan buku
-- Mengubah status buku (dibaca / belum dibaca)
 - Menghapus buku
-- Penyimpanan menggunakan `localStorage`
+- Mengubah status selesai/belum
+- Menyimpan data buku di `localStorage`
+
+Aplikasi ditulis menggunakan HTML, CSS, dan JavaScript tanpa framework eksternal.
 
 ---
 
-## 3. 📖 PREPARATION
-Reviewer membaca kode secara mandiri dan mencatat temuan awal.
+## 3. 🧾 PREPARATION
 
-Contoh Temuan:
-| Baris | Masalah                         | Saran Perbaikan                          |
-|-------|----------------------------------|------------------------------------------|
-| 22    | Tidak ada validasi input kosong | Tambahkan pengecekan `title !== ""`      |
-| 61    | `localStorage` bisa gagal       | Tambahkan try-catch                      |
+Masing-masing reviewer membaca dan menelaah kode sumber secara mandiri.
+
+### Temuan Awal:
+| Baris | File       | Masalah                          | Rekomendasi                             |
+|-------|------------|----------------------------------|------------------------------------------|
+| 22    | `main.js`  | Tidak ada validasi input kosong | Tambahkan `if (title === "") return;`    |
+| 61    | `main.js`  | Tidak ada try-catch di `saveData()` | Tambahkan pengecekan error storage   |
+| 58    | `main.js`  | `removeBook()` tanpa konfirmasi | Tambahkan `confirm("Yakin ingin hapus?")`|
+| -     | `index.html` | Tidak ada atribut `required` | Tambahkan ke input form                 |
 
 ---
 
-## 4. 🔎 INSPECTION MEETING
-Dilakukan melalui Google Meet, dengan notulen sebagai berikut:
-- Baris 22: Validasi kosong disetujui untuk ditambahkan
-- Baris 61: Perlu try-catch untuk mencegah data korup
+## 4. 🔍 INSPECTION MEETING
+
+**Tanggal:** 21 Mei 2025  
+**Durasi:** 45 menit  
+**Metode:** Google Meet  
+**Notulen:**
+- Semua masalah di atas disetujui untuk direvisi
+- Disepakati untuk tidak menambahkan fitur baru saat inspeksi
 
 ---
 
 ## 5. 🔧 REWORK
-Developer menambahkan:
-- Validasi input form
-- Try-catch saat menggunakan `localStorage.setItem()`
+
+Developer melakukan:
+- Validasi input di `addBookToShelf()`
+- Tambahan try-catch di `saveData()`
+- Konfirmasi saat `removeBook()`
+- `required` pada form input HTML
 
 ---
 
 ## 6. ✅ FOLLOW-UP
-Moderator memverifikasi bahwa perbaikan telah dilakukan dan commit sudah ditambahkan di branch `formal-inspection`.
 
+Moderator mengecek bahwa:
+- Semua revisi telah di-*commit*
+- Tidak ada bug baru
+- Commit hash: `d7a41fe - perbaikan hasil formal inspection`
+
+---
+
+## 📎 REFERENSI
+- Repository: [https://github.com/supyan38/SWQ-White-Box-testing](https://github.com/supyan38/SWQ-White-Box-testing)
+- Standar inspeksi: IEEE 1028-2008
