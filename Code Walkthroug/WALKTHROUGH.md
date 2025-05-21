@@ -1,7 +1,7 @@
 # 📘 Code Walkthrough Report - Bookshelf App
 
 ## 👥 Tim Walkthrough
-- **Reviewer 1**: Santi
+- **Reviewer**: Santi Febrianti
 ---
 
 ## 🎯 Tujuan Walkthrough
