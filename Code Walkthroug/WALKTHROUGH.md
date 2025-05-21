@@ -1,14 +1,7 @@
 # 📘 Code Walkthrough Report - Bookshelf App
 
-## 📅 Tanggal Pelaksanaan
-21 Mei 2025
-
 ## 👥 Tim Walkthrough
-- **Developer**: Supyan
 - **Reviewer 1**: Santi
-- **Reviewer 2**: Didi
-- **Moderator**: Dosen Penguji (jika ada)
-
 ---
 
 ## 🎯 Tujuan Walkthrough
